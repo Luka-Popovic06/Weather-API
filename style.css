@@ -49,3 +49,49 @@ input::placeholder {
   color: #fff;
   opacity: 0.6;
 }
+#info {
+  line-height: 0.5rem;
+  color: #fff;
+}
+#info h3 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0.6em;
+}
+#description {
+  text-transform: uppercase;
+  color: #fff;
+}
+#temp {
+  color: #fff;
+  font-size: 30px;
+  margin-top: 20px;
+}
+#searchIcon {
+  background: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.icon {
+  background: none; /* uklanja bilo koju pozadinu */
+  background-color: transparent;
+  width: 15px;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#extraInfo {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  padding-bottom: 30px;
+}
+#extraInfo h5 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
