@@ -40,6 +40,12 @@ const getWeather = async () => {
       }
     );
     const weatherData = await weatherDataFetch.json();
+    city.innerHTML = `${weatherData.name}`;
+    description.innerHTML = `${weatherData.weather[0].main}`;
+    tempImg.innerHTML = `<img src="http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png" />`;
+    temp.innerHTML = `<h2>${Math.round(weatherData.main.temp)}°C</h2>`;
+    tempMax.innerHTML = `${weatherData.main.temp_max}°C`;
+    tempMin.innerHTML = `${weatherData.main.temp_min}°C`;
   } catch (error) {
     console.log(error);
   }
