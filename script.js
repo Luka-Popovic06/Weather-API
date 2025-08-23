@@ -20,3 +20,8 @@ const months = [
   "November",
   "December",
 ];
+let dateObj = new Date();
+let month = months[dateObj.getUTCMonth()];
+let day = dateObj.getUTCDate() - 1;
+let year = dateObj.getUTCFullYear();
+date.innerHTML = `${month} ${day}, ${year}`;
